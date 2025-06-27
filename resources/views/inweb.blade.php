@@ -263,53 +263,53 @@
     <h2>Informasi Gunung</h2>
     <div class="mountain-list">
       <div class="mountain-card">
-        <img src="{{ asset('gambar gunung/Gunung-Semeru.jpg') }}" alt="Gunung Semeru" />
+        <img src="{{ asset('gambar_gunung/Gunung-Semeru.jpg') }}" alt="Gunung Semeru" />
 
         <h3>Gunung Semeru</h3>
         <p>Gunung tertinggi di Pulau Jawa dengan pemandangan yang menakjubkan dan jalur pendakian yang menantang.</p>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar gunung/rinjani.jpg') }}" alt="Gunung Rinjani" />
+        <img src="{{ asset('gambar_gunung/rinjani.jpg') }}" alt="Gunung Rinjani" />
         <h3>Gunung Rinjani</h3>
         <p>Gunung berapi aktif di Lombok dengan danau kawah yang indah dan pemandangan alam yang memukau.</p>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar gunung/Bromo.jpg') }}" alt="Gunung Bromo" />
+        <img src="{{ asset('gambar_gunung/Bromo.jpg') }}" alt="Gunung Bromo" />
         <h3>Gunung Bromo</h3>
         <p>Gunung berapi yang terkenal dengan pemandangan matahari terbit yang spektakuler dan lautan pasir yang luas.</p>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar gunung/merapi.jpg') }}" alt="Gunung Merapi" />
+        <img src="{{ asset('gambar_gunung/merapi.jpg') }}" alt="Gunung Merapi" />
         <h3>Gunung Merapi</h3>
         <p>Gunung berapi aktif di Jawa Tengah yang memiliki sejarah letusan yang sering dan pemandangan alam yang indah.</p>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar gunung/gunung-kerinci.jpg') }}" alt="Gunung Kerinci" />
+        <img src="{{ asset('gambar_gunung/gunung-kerinci.jpg') }}" alt="Gunung Kerinci" />
         <h3>Gunung Kerinci</h3>
         <p>Gunung tertinggi di Sumatra dengan hutan tropis yang lebat dan keanekaragaman hayati yang kaya.</p>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar gunung/gunung-lawu.jpg') }}" alt="Gunung Lawu" />
+        <img src="{{ asset('gambar_gunung/gunung-lawu.jpg') }}" alt="Gunung Lawu" />
         <h3>Gunung Lawu</h3>
         <p>Gunung berapi yang terletak di perbatasan Jawa Tengah dan Jawa Timur dengan jalur pendakian yang menantang.</p>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar gunung/slamet.jpg') }}" alt="Gunung Slamet" />
+        <img src="{{ asset('gambar_gunung/slamet.jpg') }}" alt="Gunung Slamet" />
         <h3>Gunung Slamet</h3>
         <p>Gunung tertinggi di Jawa Tengah dengan pemandangan alam yang memukau dan jalur pendakian yang populer.</p>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar gunung/papandayan.jpg') }}" alt="Gunung Papandayan" />
+        <img src="{{ asset('gambar_gunung/papandayan.jpg') }}" alt="Gunung Papandayan" />
         <h3>Gunung Papandayan</h3>
         <p>Gunung berapi yang terkenal dengan kawah dan pemandangan alam yang indah di Jawa Barat.</p>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar gunung/gede.jpg') }}" alt="Gunung Gede" />
+        <img src="{{ asset('gambar_gunung/gede.jpg') }}" alt="Gunung Gede" />
         <h3>Gunung Gede</h3>
         <p>Gunung yang populer untuk pendakian dengan hutan tropis dan pemandangan alam yang menawan di Jawa Barat.</p>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar gunung/ciremai.jpg') }}" alt="Gunung Ciremai" />
+        <img src="{{ asset('gambar_gunung/ciremai.jpg') }}" alt="Gunung Ciremai" />
         <h3>Gunung Ciremai</h3>
         <p>Gunung tertinggi di Jawa Barat dengan jalur pendakian yang menantang dan pemandangan alam yang indah.</p>
       </div>
