@@ -17,3 +17,7 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+# allow gambar_gunung to be tracked
+!public/gambar_gunung
+!public/gambar_gunung/*
