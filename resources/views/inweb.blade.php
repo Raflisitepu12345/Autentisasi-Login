@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gunungin - Pemesanan Tiket dan Kontak</title>
+  <title>Gunungin - Pemesanan Tiket dan Daftar Gunung</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <style>
@@ -141,7 +141,7 @@
     }
     .mountain-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 2.5rem;
       margin-bottom: 3rem;
     }
@@ -185,6 +185,22 @@
       color: #dcedc8;
       line-height: 1.6;
       min-height: 80px;
+      margin-bottom: 1rem;
+    }
+    .mountain-details {
+      text-align: left;
+      background-color: rgba(0, 40, 0, 0.7);
+      border-radius: 12px;
+      padding: 1rem;
+      width: 100%;
+      color: #c8e6c9;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+    .mountain-details h4 {
+      margin-bottom: 0.4rem;
+      color: #81c784;
+      text-shadow: 0 0 8px #4caf50;
     }
     .contact-section {
       background-color: rgba(255, 255, 255, 0.12);
@@ -218,6 +234,46 @@
       border-top: 1px solid rgba(165, 214, 167, 0.6);
       user-select: none;
     }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+      .mountain-card h3 {
+        font-size: 1.5rem;
+      }
+      .mountain-card p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header .logo {
+        font-size: 2rem;
+      }
+      nav a {
+        font-size: 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -229,7 +285,7 @@
     </nav>
   </header>
   <div class="content">
-    <h1>Pemesanan Tiket Liburan Gunung</h1>
+    <h1>Pemesanan Tiket dan Daftar Gunung</h1>
     <div class="booking-form">
       <h2>Form Pemesanan</h2>
       <form method="POST" action="{{ route('booking.process') }}">
@@ -263,55 +319,114 @@
     <h2>Informasi Gunung</h2>
     <div class="mountain-list">
       <div class="mountain-card">
-        <img src="{{ asset('gambar_gunung/Gunung-Semeru.jpg') }}" alt="Gunung Semeru" />
-
+        <img src="{{ asset('gambar_gunung/semeru.jpg') }}" alt="Gunung Semeru" />
         <h3>Gunung Semeru</h3>
         <p>Gunung tertinggi di Pulau Jawa dengan pemandangan yang menakjubkan dan jalur pendakian yang menantang.</p>
+        <div class="mountain-details">
+          <h4>Detail Jalur Pendakian</h4>
+          <p>Jalur pendakian utama melalui Ranu Pani, dengan medan yang bervariasi dari hutan tropis hingga puncak berpasir.</p>
+          <h4>Level Kesulitan</h4>
+          <p>Sulit - Memerlukan fisik prima dan pengalaman pendakian.</p>
+        </div>
       </div>
       <div class="mountain-card">
         <img src="{{ asset('gambar_gunung/rinjani.jpg') }}" alt="Gunung Rinjani" />
         <h3>Gunung Rinjani</h3>
         <p>Gunung berapi aktif di Lombok dengan danau kawah yang indah dan pemandangan alam yang memukau.</p>
+        <div class="mountain-details">
+          <h4>Detail Jalur Pendakian</h4>
+          <p>Jalur pendakian melalui Senaru dan Sembalun, dengan pemandangan danau Segara Anak yang menawan.</p>
+          <h4>Level Kesulitan</h4>
+          <p>Sangat Sulit - Pendakian panjang dan medan berat.</p>
+        </div>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar_gunung/Bromo.jpg') }}" alt="Gunung Bromo" />
+        <img src="{{ asset('gambar_gunung/bromo.jpg') }}" alt="Gunung Bromo" />
         <h3>Gunung Bromo</h3>
         <p>Gunung berapi yang terkenal dengan pemandangan matahari terbit yang spektakuler dan lautan pasir yang luas.</p>
+        <div class="mountain-details">
+          <h4>Detail Jalur Pendakian</h4>
+          <p>Jalur pendek dan mudah, cocok untuk pendaki pemula dan wisatawan.</p>
+          <h4>Level Kesulitan</h4>
+          <p>Mudah - Cocok untuk semua kalangan.</p>
+        </div>
       </div>
       <div class="mountain-card">
         <img src="{{ asset('gambar_gunung/merapi.jpg') }}" alt="Gunung Merapi" />
         <h3>Gunung Merapi</h3>
         <p>Gunung berapi aktif di Jawa Tengah yang memiliki sejarah letusan yang sering dan pemandangan alam yang indah.</p>
+        <div class="mountain-details">
+          <h4>Detail Jalur Pendakian</h4>
+          <p>Jalur pendakian melalui Selo dengan medan berbatu dan tanjakan curam.</p>
+          <h4>Level Kesulitan</h4>
+          <p>Sulit - Memerlukan pengalaman dan fisik kuat.</p>
+        </div>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar_gunung/gunung-kerinci.jpg') }}" alt="Gunung Kerinci" />
+        <img src="{{ asset('gambar_gunung/kerinci.jpg') }}" alt="Gunung Kerinci" />
         <h3>Gunung Kerinci</h3>
         <p>Gunung tertinggi di Sumatra dengan hutan tropis yang lebat dan keanekaragaman hayati yang kaya.</p>
+        <div class="mountain-details">
+          <h4>Detail Jalur Pendakian</h4>
+          <p>Jalur pendakian melalui Kayu Aro dengan hutan lebat dan medan menantang.</p>
+          <h4>Level Kesulitan</h4>
+          <p>Sulit - Pendakian panjang dan medan berat.</p>
+        </div>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar_gunung/gunung-lawu.jpg') }}" alt="Gunung Lawu" />
+        <img src="{{ asset('gambar_gunung/lawu.jpg') }}" alt="Gunung Lawu" />
         <h3>Gunung Lawu</h3>
         <p>Gunung berapi yang terletak di perbatasan Jawa Tengah dan Jawa Timur dengan jalur pendakian yang menantang.</p>
+        <div class="mountain-details">
+          <h4>Detail Jalur Pendakian</h4>
+          <p>Jalur pendakian melalui Cemoro Sewu dengan pemandangan hutan dan bukit.</p>
+          <h4>Level Kesulitan</h4>
+          <p>Sedang - Cocok untuk pendaki dengan pengalaman dasar.</p>
+        </div>
       </div>
       <div class="mountain-card">
         <img src="{{ asset('gambar_gunung/slamet.jpg') }}" alt="Gunung Slamet" />
         <h3>Gunung Slamet</h3>
         <p>Gunung tertinggi di Jawa Tengah dengan pemandangan alam yang memukau dan jalur pendakian yang populer.</p>
+        <div class="mountain-details">
+          <h4>Detail Jalur Pendakian</h4>
+          <p>Jalur pendakian melalui Bambangan dengan medan yang bervariasi dan pemandangan indah.</p>
+          <h4>Level Kesulitan</h4>
+          <p>Sulit - Memerlukan fisik prima dan pengalaman pendakian.</p>
+        </div>
       </div>
       <div class="mountain-card">
         <img src="{{ asset('gambar_gunung/papandayan.jpg') }}" alt="Gunung Papandayan" />
         <h3>Gunung Papandayan</h3>
         <p>Gunung berapi yang terkenal dengan kawah dan pemandangan alam yang indah di Jawa Barat.</p>
+        <div class="mountain-details">
+          <h4>Detail Jalur Pendakian</h4>
+          <p>Jalur pendakian yang mudah dengan pemandangan kawah dan padang edelweiss.</p>
+          <h4>Level Kesulitan</h4>
+          <p>Mudah - Cocok untuk pendaki pemula.</p>
+        </div>
       </div>
       <div class="mountain-card">
         <img src="{{ asset('gambar_gunung/gede.jpg') }}" alt="Gunung Gede" />
         <h3>Gunung Gede</h3>
         <p>Gunung yang populer untuk pendakian dengan hutan tropis dan pemandangan alam yang menawan di Jawa Barat.</p>
+        <div class="mountain-details">
+          <h4>Detail Jalur Pendakian</h4>
+          <p>Jalur pendakian melalui Cibodas dengan medan hutan dan air terjun.</p>
+          <h4>Level Kesulitan</h4>
+          <p>Sedang - Cocok untuk pendaki dengan pengalaman dasar.</p>
+        </div>
       </div>
       <div class="mountain-card">
         <img src="{{ asset('gambar_gunung/ciremai.jpg') }}" alt="Gunung Ciremai" />
         <h3>Gunung Ciremai</h3>
         <p>Gunung tertinggi di Jawa Barat dengan jalur pendakian yang menantang dan pemandangan alam yang indah.</p>
+        <div class="mountain-details">
+          <h4>Detail Jalur Pendakian</h4>
+          <p>Jalur pendakian melalui Linggarjati dengan medan berbatu dan tanjakan curam.</p>
+          <h4>Level Kesulitan</h4>
+          <p>Sulit - Memerlukan fisik prima dan pengalaman pendakian.</p>
+        </div>
       </div>
     </div>
     <div class="contact-section">
@@ -325,9 +440,7 @@
     </div>
   </div>
   
-
   <footer>
-    
     <div class="social-icons">
       <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
       <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -335,7 +448,6 @@
       <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
     </div>
     <div style="margin-top: 1rem;">&copy; 2025 Gunungin. Semua Hak Dilindungi.</div>
-   
   </footer>
 </body>
 </html>
