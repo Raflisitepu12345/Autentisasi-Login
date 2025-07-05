@@ -306,7 +306,7 @@
           <option value="" disabled selected>-- Pilih Gunung --</option>
           <option value="gunung semeru">Gunung Semeru</option>
           <option value="gunung rinjani">Gunung Rinjani</option>
-          <option value="gunung bromo">Gunung Bromo</option>
+          <option value="gunung bromo1">Gunung Bromo</option>
           <option value="gunung merapi">Gunung Merapi</option>
           <option value="gunung kerinci">Gunung Kerinci</option>
           <option value="gunung lawu">Gunung Lawu</option>
@@ -352,7 +352,7 @@
         </div>
       </div>
       <div class="mountain-card">
-        <img src="/gambar/bromo.jpg" alt="gunung bromo" />
+        <img src="/gambar/bromo1.jpg" alt="gunung bromo" />
         <h3>Gunung Bromo</h3>
         <p>Gunung berapi yang terkenal dengan pemandangan matahari terbit yang spektakuler dan lautan pasir yang luas.</p>
         <div class="mountain-details">
