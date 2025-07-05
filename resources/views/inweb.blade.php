@@ -274,6 +274,17 @@
         font-size: 1.5rem;
       }
     }
+
+    .social-icons a {
+  margin: 0 10px;
+  color: #a5d6a7;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: #4caf50;
+}
+
   </style>
 </head>
 <body>
@@ -293,21 +304,21 @@
         <label for="mountain">Pilih Gunung</label>
         <select id="mountain" name="mountain" required>
           <option value="" disabled selected>-- Pilih Gunung --</option>
-          <option value="Gunung Semeru">Gunung Semeru</option>
-          <option value="Gunung Rinjani">Gunung Rinjani</option>
-          <option value="Gunung Bromo">Gunung Bromo</option>
-          <option value="Gunung Merapi">Gunung Merapi</option>
-          <option value="Gunung Kerinci">Gunung Kerinci</option>
-          <option value="Gunung Lawu">Gunung Lawu</option>
-          <option value="Gunung Slamet">Gunung Slamet</option>
-          <option value="Gunung Papandayan">Gunung Papandayan</option>
-          <option value="Gunung Gede">Gunung Gede</option>
-          <option value="Gunung Ciremai">Gunung Ciremai</option>
-          <option value="Gunung Ijen">Gunung Ijen</option>
-          <option value="Gunung Batur">Gunung Batur</option>
-          <option value="Gunung Sempu">Gunung Sempu</option>
-          <option value="Gunung Tambora">Gunung Tambora</option>
-          <option value="Gunung Kerinci">Gunung Kerinci</option>
+          <option value="gunung semeru">Gunung Semeru</option>
+          <option value="gunung rinjani">Gunung Rinjani</option>
+          <option value="gunung bromo">Gunung Bromo</option>
+          <option value="gunung merapi">Gunung Merapi</option>
+          <option value="gunung kerinci">Gunung Kerinci</option>
+          <option value="gunung lawu">Gunung Lawu</option>
+          <option value="gunung slamet">Gunung Slamet</option>
+          <option value="gunung papandayan">Gunung Papandayan</option>
+          <option value="gunung gede">Gunung Gede</option>
+          <option value="gunung ciremai">Gunung Ciremai</option>
+          <option value="gunung ijen">Gunung Ijen</option>
+          <option value="gunung batur">Gunung Batur</option>
+          <option value="gunung sempu">Gunung Sempu</option>
+          <option value="gunung tambora">Gunung Tambora</option>
+          
         </select>
         <label for="date">Tanggal Kunjungan</label>
         <input type="date" id="date" name="date" required />
@@ -319,7 +330,7 @@
     <h2>Informasi Gunung</h2>
     <div class="mountain-list">
       <div class="mountain-card">
-        <img src="{{ asset('gambar_gunung/semeru.jpg') }}" alt="Gunung Semeru" />
+        <img src="/gambar/semeru.jpg" alt="Gunung Semeru" />
         <h3>Gunung Semeru</h3>
         <p>Gunung tertinggi di Pulau Jawa dengan pemandangan yang menakjubkan dan jalur pendakian yang menantang.</p>
         <div class="mountain-details">
@@ -330,7 +341,7 @@
         </div>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar_gunung/rinjani.jpg') }}" alt="Gunung Rinjani" />
+        <img src="/gambar/rinjani.jpg" alt="Gunung Rinjani" />
         <h3>Gunung Rinjani</h3>
         <p>Gunung berapi aktif di Lombok dengan danau kawah yang indah dan pemandangan alam yang memukau.</p>
         <div class="mountain-details">
@@ -341,7 +352,7 @@
         </div>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar_gunung/bromo.jpg') }}" alt="Gunung Bromo" />
+        <img src="/gambar/bromo.jpg" alt="gunung bromo" />
         <h3>Gunung Bromo</h3>
         <p>Gunung berapi yang terkenal dengan pemandangan matahari terbit yang spektakuler dan lautan pasir yang luas.</p>
         <div class="mountain-details">
@@ -352,7 +363,7 @@
         </div>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar_gunung/merapi.jpg') }}" alt="Gunung Merapi" />
+        <img src="/gambar/merapi.jpg" alt="Gunung Merapi" />
         <h3>Gunung Merapi</h3>
         <p>Gunung berapi aktif di Jawa Tengah yang memiliki sejarah letusan yang sering dan pemandangan alam yang indah.</p>
         <div class="mountain-details">
@@ -363,7 +374,7 @@
         </div>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar_gunung/kerinci.jpg') }}" alt="Gunung Kerinci" />
+        <img src="/gambar/kerinci.jpg" alt="Gunung Kerinci" />
         <h3>Gunung Kerinci</h3>
         <p>Gunung tertinggi di Sumatra dengan hutan tropis yang lebat dan keanekaragaman hayati yang kaya.</p>
         <div class="mountain-details">
@@ -374,7 +385,7 @@
         </div>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar_gunung/lawu.jpg') }}" alt="Gunung Lawu" />
+        <img src="/gambar/lawu.jpg" alt="Gunung Lawu" />
         <h3>Gunung Lawu</h3>
         <p>Gunung berapi yang terletak di perbatasan Jawa Tengah dan Jawa Timur dengan jalur pendakian yang menantang.</p>
         <div class="mountain-details">
@@ -385,7 +396,7 @@
         </div>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar_gunung/slamet.jpg') }}" alt="Gunung Slamet" />
+        <img src="/gambar/slamet.jpg" alt="Gunung Slamet" />
         <h3>Gunung Slamet</h3>
         <p>Gunung tertinggi di Jawa Tengah dengan pemandangan alam yang memukau dan jalur pendakian yang populer.</p>
         <div class="mountain-details">
@@ -396,7 +407,7 @@
         </div>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar_gunung/papandayan.jpg') }}" alt="Gunung Papandayan" />
+        <img src="/gambar/papandayan.jpg" alt="Gunung Papandayan" />
         <h3>Gunung Papandayan</h3>
         <p>Gunung berapi yang terkenal dengan kawah dan pemandangan alam yang indah di Jawa Barat.</p>
         <div class="mountain-details">
@@ -407,7 +418,7 @@
         </div>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar_gunung/gede.jpg') }}" alt="Gunung Gede" />
+        <img src="/gambar/gede.jpg" alt="Gunung Gede" />
         <h3>Gunung Gede</h3>
         <p>Gunung yang populer untuk pendakian dengan hutan tropis dan pemandangan alam yang menawan di Jawa Barat.</p>
         <div class="mountain-details">
@@ -418,7 +429,7 @@
         </div>
       </div>
       <div class="mountain-card">
-        <img src="{{ asset('gambar_gunung/ciremai.jpg') }}" alt="Gunung Ciremai" />
+        <img src="/gambar/ciremai.jpg" alt="Gunung Ciremai" />
         <h3>Gunung Ciremai</h3>
         <p>Gunung tertinggi di Jawa Barat dengan jalur pendakian yang menantang dan pemandangan alam yang indah.</p>
         <div class="mountain-details">

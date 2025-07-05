@@ -123,8 +123,8 @@
       gap: 1.5rem;
     }
     .social-icons a {
-      color: white;
-      margin: 0 0.6rem;
+     
+    
       font-size: 1.5rem;
       text-decoration: none;
       transition: transform 0.3s;
@@ -135,6 +135,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      margin: 0 10px;
+      color: #a5d6a7;
+  
+  
+
+
     }
     .social-icons a:hover {
       transform: scale(1.2);
